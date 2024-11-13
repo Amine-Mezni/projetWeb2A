@@ -1,0 +1,172 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body 
+{
+    background-color: #003380;
+    color: #333;
+    line-height: 1.6;
+}
+nav 
+{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #e0e0e0;
+}
+nav img 
+{
+    height: 200px;
+    margin-right: 20px;
+}
+nav a 
+{
+    margin-right: 20px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #003380;
+    font-weight: bold;
+}
+nav a:hover 
+{
+    color: #000000;
+}
+h1 
+{
+    color: #003380;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 30px 0;
+}
+p 
+{
+    font-size: 1.1em;
+    color: #555;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    line-height: 1.8;
+    text-align: center;
+}
+section 
+{
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.login-form h1 
+{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #003380;
+}
+.form-group 
+{
+    margin-bottom: 15px;
+}
+.form-group label 
+{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.form-group input 
+{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group input:focus 
+{
+    border-color: #007b3d;
+    outline: none;
+}
+.form-group button 
+{
+    width: 100%;
+    background-color: #003380;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.form-group button:hover 
+{
+    background-color: #00204a;
+}
+p 
+{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+p a 
+{
+    color: #003380;
+    text-decoration: none;
+}
+p a:hover 
+{
+    text-decoration: underline;
+}
+footer 
+{
+    background-color: #e0e0e0;
+    color: #003380;
+    padding: 20px 0;
+}
+footer table
+{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-spacing: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+footer h4 
+{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #003380;
+}
+footer pre 
+{
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+}
+footer input[type="email"] 
+{
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+footer p 
+{
+    text-align: center;
+    color: #555;
+    font-size: 0.9em;
+    margin-top: 20px;
+}

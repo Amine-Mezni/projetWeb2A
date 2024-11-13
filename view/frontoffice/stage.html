@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPro Hub</title>
+    <link rel="stylesheet" href="../frontoffice/css/stage.css">
+</head>
+<body>
+    <nav>
+        <img src="../frontoffice/img/logo.gif" alt="EduPro Hub Logo">
+        <a href="accueil.html">Accueil</a>
+        <a href="formation.html">Formation</a>
+        <a href="gestion_cours.html">Cours</a>
+        <a href="stage.html">Stage</a>
+        <a href="messagerie.html">Messagerie</a>
+        <a href="reclamation.html">Reclamation</a>
+        
+        <li _ngcontent-cys-c46="">
+            <a _ngcontent-cys-c46="">Authentification</a>
+            <ul _ngcontent-cys-c46="" class="dropdown">
+                <li _ngcontent-cys-c46="">
+                    <a _ngcontent-cys-c46="" routerlink="" href="connecter.html">Se Connecter</a>
+                </li>
+                <li _ngcontent-cys-c46="">
+                    <a _ngcontent-cys-c46="" routerlink="" href="inscrit.html">S'inscrire</a>
+                </li>
+            </ul>
+        </li>
+        <a href="equipe.html">Equipe</a>
+    </nav>
+
+    <main class="main-content">
+        <section class="stage-form">
+            <center><h2>Ajouter un Nouveau Stage</h2></center>
+            <form action="#" method="post">
+                <label for="stage-title">Titre du Stage :</label>
+                <input type="text" id="stage-title" name="stage-title" required>
+
+                <label for="stage-description">Description :</label>
+                <textarea id="stage-description" name="stage-description" rows="4" required></textarea>
+
+                <label for="stage-dates">Dates du Stage :</label>
+                <input type="date" id="stage-start" name="stage-start" required> à
+                <input type="date" id="stage-end" name="stage-end" required>
+                <center><button type="submit">Ajouter le Stage</button></center>
+            </form>
+        </section>
+
+        <section class="stage-list">
+            <h2>Liste des Stages</h2>
+            <ul>
+                <li><strong>Stage de Développement Web</strong> - 01/06/2024 à 15/06/2024</li>
+                <li><strong>Stage de Marketing Digital</strong> - 10/07/2024 à 20/07/2024</li>
+                
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <table>
+            <tr>
+                <td align="center">
+                    <h4>Contactez-nous</h4>
+                    <pre>Tél : 01 23 45 67 89
+Email : contact@eduprohub.com</pre>
+                </td>
+                <td align="center">
+                    <h4>Partenaires</h4>
+                    <pre>EduPro Hub
+Autres entreprises</pre>
+                </td>
+                <td align="center">
+                    <h4>Newsletter</h4>
+                    <pre>Soyez les premiers informés des nouveautés, soldes & promos !</pre>
+                    <form>
+                        <input type="email" name="email" id="email" pattern=".+@gmail.com" placeholder="E-MAIL">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p class="footer p">© 2021 - Tous droits réservés</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,218 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body 
+{
+    background-color: #003380;
+    color: #333;
+    line-height: 1.6;
+}
+nav 
+{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #e0e0e0;
+
+}
+
+nav img 
+{
+    height: 200px;
+    margin-right: 20px;
+}
+nav a 
+{
+    margin-right: 50px;
+    text-decoration: none;
+    color: #003380;
+    font-weight: bold;
+}
+nav a:hover 
+{
+    color: #000000;
+}
+li {
+    position: relative;
+    list-style: none;
+}
+
+/* Lien principal (Authentification) */
+li > a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+/* Styles pour le sous-menu (dropdown) */
+.dropdown {
+    display: none; /* Masqué par défaut */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f0f0f0;
+    padding: 0;
+    margin: 0;
+    min-width: 200px; /* Largeur minimale du menu déroulant */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.dropdown li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Afficher le sous-menu au survol */
+li:hover .dropdown {
+    display: block;
+}
+
+
+/* Main Content */
+.main-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Stage Form */
+.stage-form {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stage-form h2 {
+    color: #003380;
+    margin-bottom: 15px;
+}
+
+.stage-form label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+.stage-form input[type="text"],
+.stage-form input[type="date"],
+.stage-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.stage-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.stage-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Stage List */
+.stage-list {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stage-list h2 {
+    color: #003380;
+    margin-bottom: 15px;
+}
+
+.stage-list ul {
+    list-style-type: none;
+}
+
+.stage-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    color: #555;
+}
+
+.stage-list li:last-child {
+    border-bottom: none;
+}
+
+.stage-list li strong {
+    color: #333;
+}
+
+footer 
+{
+    background-color: #e0e0e0;
+    color: #003380;
+    padding: 20px 0;
+}
+footer table 
+{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-spacing: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+footer h4 
+{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #003380;
+}
+footer pre 
+{
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+}
+footer input[type="email"] 
+{
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+footer p 
+{
+    text-align: center;
+    color: #555;
+    font-size: 0.9em;
+    margin-top: 20px;
+    background-color: #f4f4f4;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPro Hub</title>
+    <link rel="stylesheet" href="../frontoffice/css/gestion_cours.css">
+</head>
+<body>
+    <nav>
+        <img src="../frontoffice/img/logo.gif" alt="EduPro Hub Logo">
+        <a href="accueil.html">Accueil</a>
+        <a href="formation.html">Formation</a>
+        <a href="gestion_cours.html">Cours</a>
+        <a href="stage.html">Stage</a>
+        <a href="messagerie.html">Messagerie</a>
+        <a href="reclamation.html">Reclamation</a>
+        <li>
+            <a href="#">Authentification</a>
+            <ul class="dropdown">
+                <li><a href="connecter.html">Se Connecter</a></li>
+                <li><a href="inscrit.html">S'inscrire</a></li>
+            </ul>
+        </li>
+        <a href="equipe.html">Equipe</a>
+    </nav>
+    <section>
+        <form action="">
+
+        </form>
+        <div class="container">
+            <header class="search-header">
+                <div class="search-nav">
+                    <div class="search-bar-container">
+                        <div class="search-input-wrapper">
+                            <input type="text" placeholder="Chercher des cours" id="searchInput">
+                        </div>
+                        <div class="filter-dropdowns">
+                            <select name="level" id="levelFilter">
+                                <option value="">Level</option>
+                                <option value="debutant">Débutant</option>
+                                <option value="intermédiaire">Intermediate</option>
+                                <option value="avancé">Advanced</option>
+                            </select>
+                            <select name="category" id="categoryFilter">
+                                <option value="">Category</option>
+                                <option value="development">Web Development</option>
+                                <option value="design">UI/UX Design</option>
+                                <option value="business">Business</option>
+                                <option value="marketing">Digital Marketing</option>
+                                <option value="languages">Languages</option>
+                                <option value="data-science">Data Science</option>
+                                <option value="mobile">Mobile Development</option>
+                                <option value="ai">Artificial Intelligence</option>
+                            </select>
+                            <select name="duration" id="durationFilter">
+                                <option value="">Duration</option>
+                                <option value="0-2">Under 2 Hours</option>
+                                <option value="2-5">2-5 Hours</option>
+                                <option value="5-10">5-10 Hours</option>
+                                <option value="10+">Over 10 Hours</option>
+                            </select>
+                            <select name="certificate" id="certificateFilter">
+                                <option value="">Certificate</option>
+                                <option value="included">Certificat Included</option>
+                                <option value="optional">Optional Certificate</option>
+                                <option value="none">No Certificate</option>
+                            </select>
+                        </div>
+                        <form action="veriv.html" method="get">
+                            <button type="submit" id="searchButton">Chercher</button>
+                        </form>
+                    </div>
+                </div>
+            </header>
+            <div class="active-filters">
+                <div class="filter-tags">
+                    <span class="filter-tag">Débutant <button class="remove-filter">×</button></span>
+                    <span class="filter-tag">Développement Web <button class="remove-filter">×</button></span>
+                </div>
+                <button class="clear-filters">Clear All Filters</button>
+            </div>
+            <div class="results-info">
+                <p>Showing <span id="resultCount">98</span> free courses</p>
+                <select name="sort" id="sortResults">
+                    <option value="relevant">Most Relevant</option>
+                    <option value="newest">Newest</option>
+                    <option value="popular">Most Popular</option>
+                    <option value="rating">Highest Rated</option>
+                </select>
+            </div>  
+        </div>
+        <footer class="pagination">
+            <button class="prev-page">Previous</button>
+            <div class="page-numbers">
+                <button class="page active">1</button>
+                <button class="page">2</button>
+                <button class="page">3</button>
+                <span class="page-ellipsis">...</span>
+                <button class="page">10</button>
+            </div>
+            <button class="next-page">Next</button>
+        </footer>
+    </section>
+
+        <footer>
+            <table>
+                <tr>
+                    <td align="center">
+                        <h4>Contactez-nous</h4>
+                        <pre>Tél: 01 23 45 67 89<br>Email: contact@eduprohub.com</pre>
+                    </td>
+                    <td align="center">
+                        <h4>Partenaires</h4>
+                        <pre>EduPro Hub<br>Autres entreprises</pre>
+                    </td>
+                    <td align="center">
+                        <h4>Newsletter</h4>
+                        <pre>Soyez les premiers informés des nouveautés, soldes & promos !</pre>
+                        <form>
+                            <input type="email" name="email" id="email" placeholder="E-MAIL">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <p>© 2021 - Tous droits réservés</p>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+</body>
+</html>
