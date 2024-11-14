@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../frontoffice/css/mes.css">
     <title>EduPro Hub</title>
-    
 </head>
 <body>
     <nav>
@@ -32,40 +31,41 @@
     </nav>
     <section>
         <div class="sidebar">
-            <h2>Connect with People</h2>
+            <h2>Chat with formers and classmates</h2>
             
             <h3>Students</h3>
             <div class="search-bar">
-                <input type="text" id="studentSearch" placeholder="Search students..." onkeyup="searchUsers('studentSearch', 'studentList')" />
+                <input type="text" id="studentSearch" placeholder="Search students..."/>
             </div>
             <ul id="studentList" class="user-list">
-                <li onclick="openChat('Student 1')">Student 1</li>
-                <li onclick="openChat('Student 2')">Student 2</li>
-                <li onclick="openChat('Student 3')">Student 3</li>
+                <li>Mouheb Amdouni</li>
+                <li>Wejed Guermessi</li>
+                <li>Adem Jendoubi</li>
             </ul>
             
             <h3>Formers</h3>
             <div class="search-bar">
-                <input type="text" id="formerSearch" placeholder="Search formers..." onkeyup="searchUsers('formerSearch', 'formerList')" />
+                <input type="text" id="formerSearch" placeholder="Search formers..." />
             </div>
             <ul id="formerList" class="user-list">
-                <li onclick="openChat('Former 1')">Former 1</li>
-                <li onclick="openChat('Former 2')">Former 2</li>
-                <li onclick="openChat('Former 3')">Former 3</li>
+                <li>Mr. Ahmed</li>
+                <li>Mme. Ameni</li>
+                <li>Mr. Feker</li>
             </ul>
         </div>
+    
         <div class="chat-container">
             <div class="chat-header">
                 <h2 id="chatHeader">Your Chat Space</h2>
             </div>
             <div id="chatBox" class="chat-box">
-                <div class="message">Select someone to start a conversation and get connected!</div>
+                <div class="message">Select someone to start a conversation with !</div>
             </div>
             <div class="message-input">
                 <input type="text" placeholder="Type your message here..." />
                 <button type="button">Send</button>
             </div>
-        </div>
+        </div> 
     </section>
     <footer>
         <table>
@@ -94,6 +94,6 @@ Autres entreprises</pre>
                 </td>
             </tr>
         </table>
-    </footer>
+    </footer> 
 </body>
 </html>
