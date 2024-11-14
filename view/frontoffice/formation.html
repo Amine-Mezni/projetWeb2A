@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../frontoffice/css/formation.css">
+    <title>EduPro Hub</title>
+  </head>
+  <body>
+    <nav>
+        <img src="../frontoffice/img/logo.gif" alt="EduPro Hub Logo">
+        <a href="accueil.html">Accueil</a>
+        <a href="formation.html">Formation</a>
+        <a href="gestion_cours.html">Cours</a>
+        <a href="stage.html">Stage</a>
+        <a href="messagerie.html">Messagerie</a>
+        <a href="reclamation.html">Reclamation</a>
+        <li _ngcontent-cys-c46="">
+            <a _ngcontent-cys-c46="">Authentification</a>
+            <ul _ngcontent-cys-c46="" class="dropdown">
+                <li _ngcontent-cys-c46="">
+                    <a _ngcontent-cys-c46="" routerlink="" href="connecter.html">Se Connecter</a>
+                </li>
+                <li _ngcontent-cys-c46="">
+                    <a _ngcontent-cys-c46="" routerlink="" href="inscrit.html">S'inscrire</a>
+                </li>
+            </ul>
+        </li>
+        <a href="equipe.html">Equipe</a>
+    </nav>
+    <br>
+    <div class="container">
+      <section class="form-section">
+        <h2>Sélectionnez votre Formation</h2>
+        <form action="/submit-formation" method="POST">
+          <!-- Sélection de Catégorie -->
+          <label for="category">Catégorie :</label>
+          <select id="category" name="category" required>
+            <option value="" selected disabled>
+              Sélectionnez une catégorie
+            </option>
+            <option value="IT">Informatique</option>
+            <option value="Business">Business</option>
+            <option value="Marketing">Marketing</option>
+            <!-- Ajoutez plus d'options si nécessaire -->
+          </select>
+
+          <!-- Sélection de la Période -->
+          <label for="period">Période :</label>
+          <select id="period" name="period" required>
+            <option value="" selected disabled>Sélectionnez une période</option>
+            <option value="1-mois">1 Mois</option>
+            <option value="3-mois">3 Mois</option>
+            <option value="6-mois">6 Mois</option>
+            <option value="1-an">1 An</option>
+          </select>
+
+          <!-- Sélection de l'Intensité -->
+          <label for="intensity">Intensité :</label>
+          <select id="intensity" name="intensity" required>
+            <option value="" selected disabled>
+              Sélectionnez une intensité
+            </option>
+            <option value="debutant">Débutant</option>
+            <option value="intermediaire">Intermédiaire</option>
+            <option value="expert">Expert</option>
+          </select>
+
+          <!-- Bouton de Soumission -->
+          <input type="submit" value="Trouver des Formations" />
+        </form>
+      </section>
+    </div>
+    <br>
+    <footer>
+        <table>
+            <tr>
+                <td align="center">
+                    <h4>Contactez-nous</h4>
+                    <pre>Tél : 01 23 45 67 89
+Email : contact@eduprohub.com</pre>
+                </td>
+                <td align="center">
+                    <h4>Partenaires</h4>
+                    <pre>EduPro Hub
+Autres entreprises</pre>
+                </td>
+                <td align="center">
+                    <h4>Newsletter</h4>
+                    <pre>Soyez les premiers informés des nouveautés, soldes & promos !</pre>
+                    <form>
+                        <input type="email" name="email" id="email" pattern=".+@gmail.com" placeholder="E-MAIL">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p class="footer p">© 2021 - Tous droits réservés</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+  </body>
+</html>
