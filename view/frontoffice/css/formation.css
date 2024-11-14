@@ -1,0 +1,175 @@
+/* Réinitialisation des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #003380;
+    color: #333;
+}
+nav 
+{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #e0e0e0;
+
+}
+
+nav img 
+{
+    height: 200px;
+    margin-right: 20px;
+}
+nav a 
+{
+    margin-right: 50px;
+    text-decoration: none;
+    color: #003380;
+    font-weight: bold;
+}
+nav a:hover 
+{
+    color: #000000;
+}
+nav li 
+{
+    position: relative;
+    list-style: none;
+}
+nav li > a 
+{
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+    font-weight: bold;
+}
+nav .dropdown 
+{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f0f0f0;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+nav .dropdown li 
+{
+    width: 100%;
+}
+nav .dropdown li a 
+{
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+}
+nav .dropdown li a:hover 
+{
+    background-color: #007bff;
+    color: white;
+}
+nav li:hover .dropdown 
+{
+    display: block;
+}
+  /* Style du conteneur */
+  .container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Style de la section du formulaire */
+  .form-section {
+    margin-top: 20px;
+  }
+  
+  .form-section h2 {
+    color: #0073e6;
+    margin-bottom: 20px;
+  }
+  
+  .form-section label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .form-section select,
+  .form-section input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .form-section input[type="submit"] {
+    background-color: #0073e6;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+  }
+  
+  .form-section input[type="submit"]:hover {
+    background-color: #005bb5;
+  }
+  
+  footer 
+  {
+      background-color: #e0e0e0;
+      color: #003380;
+      padding: 20px 0;
+  }
+  footer table 
+  {
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+      border-spacing: 20px;
+      color: #ffffff;
+      text-align: center;
+  }
+  footer h4 
+  {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+      color: #003380;
+  }
+  footer pre 
+  {
+      font-size: 1em;
+      line-height: 1.5;
+      color: #555;
+  }
+  footer input[type="email"] 
+  {
+      width: 100%;
+      max-width: 200px;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+  }
+  footer p 
+  {
+      text-align: center;
+      color: #555;
+      font-size: 0.9em;
+      margin-top: 20px;
+      background-color: #f4f4f4;
+  }
